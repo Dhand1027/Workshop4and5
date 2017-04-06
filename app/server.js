@@ -9,7 +9,6 @@ function emulateServerReturn(data, cb) {
     cb(data);
   }, 4);
 }
-
 /**
  * Given a feed item ID, returns a FeedItem object with references resolved.
  * Internal to the server, since it's synchronous.
