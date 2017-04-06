@@ -1,5 +1,5 @@
 import React from 'react';
-import {unixTimeToString} from '../util'
+import {unixTimeToString} from '../util.js';
 
 export default class StatusUpdate extends React.Component {
   render() {
@@ -12,7 +12,7 @@ export default class StatusUpdate extends React.Component {
                 PIC
               </div>
               <div className="media-body">
-                <a href="#">{this.props.author.fullName}</a>
+              <a href="#">{this.props.author.fullName}</a>
                 <br /> {unixTimeToString(this.props.postDate)} · {this.props.location} · <span
                   className="glyphicon glyphicon-user"></span>
               </div>
